@@ -1,0 +1,56 @@
+.parent-container,
+.banner-wrapper {
+    position: relative;
+}
+
+.parent-container div:first-child {
+    position: absolute;
+}
+
+.parent-container .text-holder {
+    z-index: 1;
+    width: 70%;
+}
+
+.parent-container .text-holder h1 {
+    color: #783384;
+    font-weight: 500;
+}
+
+.parent-container .text-holder p {
+    font-size: 20px;
+    font-weight: 400;
+    width: 345px;
+    line-height: 30px;
+}
+
+.parent-container a.button:any-link {
+    background-color: #783384;
+    border-radius: unset;
+}
+
+@media (width < 600px) {
+
+    .parent-container .text-holder {
+        margin: 16px 0 0 16px;
+        width: 50%;
+    }
+
+    .parent-container .text-holder h1 {
+        font-size: 18px;
+        line-height: 18.5px;
+        letter-spacing: -0.17px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .parent-container .text-holder p {
+        width: unset;
+        margin: 0;
+        font-size: 14px;
+        line-height: 18.5px;
+        letter-spacing: -0.35px;
+        max-width: 150px;
+        margin-top: 22px;
+    }
+}

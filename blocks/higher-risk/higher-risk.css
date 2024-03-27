@@ -1,0 +1,133 @@
+.higher-risk {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -40px;
+    position: relative;
+    z-index: 2;
+    width: calc(100% - 40px);
+}
+
+.higher-risk p,
+.higher-risk div {
+    color: #783384;
+}
+
+.higher-risk h3 {
+    color: #444b50;
+}
+
+.higher-risk .first,
+.second,
+.third,
+.fourth {
+    font-stretch: normal;
+    font-style: normal;
+    font-family: Lato, sans-serif;
+    line-height: 1.26;
+    text-align: center;
+    align-self: center;
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f1ed;
+    max-height: 196px;
+
+}
+
+.higher-risk .first {
+    font-size: 32px;
+    font-weight: 600;
+    align-self: center;
+    width: 33.33%;
+    text-align: left;
+    background-image: url("https://www.knowpneumonia.com/images/arrow-new.png");
+    background-size: 100% 100%;
+}
+
+.higher-risk .first p {
+    margin: 40px
+}
+
+.higher-risk .first>div>p:first-child {
+    margin-bottom: unset;
+}
+
+.higher-risk .first>div>p:nth-child(2) {
+    margin-top: unset;
+}
+
+.higher-risk .second {
+    width: 25%;
+}
+
+.higher-risk .third {
+    height: 196px;
+}
+
+.higher-risk .third>div:first-child {
+    background: #d6d2ca;
+    color: #444b50;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16.5px;
+    font-weight: 700;
+}
+
+.higher-risk .fourth {
+    width: 33.33%;
+}
+
+.higher-risk .second,
+.third,
+.fourth {
+    font-size: 18px;
+    font-weight: 700;
+    align-self: center;
+}
+
+.higher-risk a.button:any-link {
+    background-color: #783384;
+    border-radius: unset;
+}
+
+@media (width<600px) {
+    .higher-risk {
+        flex-direction: column;
+        margin-top: 90px;
+        width: 100%;
+    }
+
+    .higher-risk h3 {
+        font-size: 24px;
+    }
+
+    .higher-risk .first,
+    .second,
+    .third,
+    .fourth {
+        width: 100% !important;
+    }
+
+    .higher-risk .first {
+        background: url('https://www.knowpneumonia.com/images/shape-14.png');
+        padding-bottom: 20px;
+    }
+
+    .higher-risk .first p {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 18.5px;
+        font-style: normal;
+    }
+
+    .higher-risk .third {
+        height: unset;
+    }
+}

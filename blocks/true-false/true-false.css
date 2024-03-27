@@ -1,0 +1,60 @@
+.true-false-wrapper {
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 4% 50%, 0% 0%);
+}
+
+.true-false {
+    background-color: #e8e4dc;
+    color: #672c72;
+    position: relative;
+    padding: 30px;
+}
+
+.true-false>div {
+    width: 90%;
+    margin: auto;
+}
+
+.true-false>div:nth-child(2) {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.true-false>div>div.true-false-container {
+    display: flex;
+    justify-content: end;
+    width: 40%;
+}
+
+.true-false .true-false-container input {
+    width: 25px;
+    padding: 0 14px 0 0;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.true-false>div>div.true-false-container label {
+    padding-right: 30px;
+    font-weight: 700;
+    padding-left: 10px;
+    font-family: roboto-slab;
+    font-size: 30px;
+}
+
+.true-false .defaultContent>div:first-child>p:first-child {
+    font-family: roboto-slab;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+@media (max-width: 767px) {
+
+    .true-false-wrapper {
+        clip-path: unset;
+    }
+
+    .true-false>div:nth-child(2) {
+        flex-direction: column;
+    }
+}

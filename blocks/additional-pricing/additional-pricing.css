@@ -1,0 +1,29 @@
+.additional-pricing {
+    margin-top: 56px;
+    padding: 32px;
+}
+
+.additional-pricing>div>div {
+    font-family: 'Pfizer Diatype', 'Pfizer Diatype-fallback', sans-serif;
+    margin: 16px 0;
+}
+
+.additional-pricing>div>div a:any-link {
+    color: rgb(108, 161, 0);
+    text-decoration: underline;
+}
+
+.additional-pricing>div>div a:any-link:hover {
+    background-image: linear-gradient(to top, rgb(108, 161, 0), rgb(108, 161, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+    background-origin: padding-box;
+    background-position-x: 0px;
+    background-position-y: 95%;
+    background-repeat: repeat;
+    background-size: 100% 200%;
+    cursor: auto;
+    display: inline;
+    font-family: "Pfizer Diatype", "Pfizer Diatype-fallback", sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    transition: .25s cubic-bezier(.25, .46, .45, .94);
+}

@@ -1,0 +1,33 @@
+.hide-show-button {
+    margin: 0 60px;
+}
+
+.hide-show-button .child1,
+.hide-show-button .child2>div:nth-child(1) {
+    font-family: lato, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #783384;
+    cursor: pointer;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.hide-show-button>div h2 {
+    color: #363636;
+    font-size: 20px;
+}
+
+@media (width<600px) {
+    .hide-show-button>div p {
+        font-size: 16px;
+    }
+
+    .hide-show-button .child1,
+    .hide-show-button .child2>div:nth-child(1) {
+        margin: 0;
+        font-size: 16px;
+        text-align: end;
+    }
+}

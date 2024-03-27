@@ -1,0 +1,35 @@
+.already-vaccinated {
+    background: #783384;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+.already-vaccinated>div>div:first-child {
+    font-family: roboto-slab, serif;
+    font-size: 24px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.already-vaccinated>div a:any-link {
+    color: #fff;
+    font-weight: 400;
+    font-family: Lato;
+    text-decoration: underline;
+}
+
+@media (width < 600px) {
+
+    .already-vaccinated>div>div:first-child,
+    .already-vaccinated>div>div {
+        font-size: 18px;
+        text-align: left;
+    }
+}

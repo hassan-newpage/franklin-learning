@@ -1,0 +1,41 @@
+.diagnosis {
+    background-color: #ece5f4;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 32px 0;
+}
+
+.diagnosis .child-0 {
+    display: flex;
+    color: #430098;
+    gap: 24px;
+    align-items: center;
+}
+
+.diagnosis .child-0 p {
+    margin: 0;
+}
+
+.diagnosis .child-1 a.button:any-link {
+    background-color: #430098;
+    font-weight: unset;
+}
+
+@media (width<640px) {
+    .diagnosis {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .diagnosis .child-1 {
+        width: 100%;
+    }
+
+    .diagnosis .child-1 a.button:any-link {
+        width: 100%;
+        text-align: left;
+    }
+}

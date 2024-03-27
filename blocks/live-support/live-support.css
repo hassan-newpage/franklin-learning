@@ -1,0 +1,68 @@
+#to-get-started-with-pfizer-support-resources {
+    color: #430098;
+    margin: 0 16px;
+}
+
+.live-support-container {
+    background-color: #f5f5f5;
+}
+
+.live-support {
+    display: flex;
+    justify-content: center;
+}
+
+.live-support .container {
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.live-support .container .child-0 {
+    margin: 0 -30px 0 0;
+    z-index: 1;
+}
+
+.live-support .container .child-1 {
+    display: flex;
+    align-content: center;
+    background-color: #d0ebf8;
+    flex-direction: column;
+    padding: 14px 60px;
+}
+
+.live-support .container .child-1 p {
+    margin: 0;
+    color: #124e76;
+}
+
+.live-support .container .child-2 {
+    background-color: #124e77;
+    padding: 30px;
+    border-radius: 0 5px 5px 0;
+}
+
+.live-support .container .child-2 a:any-link {
+    text-decoration: none;
+    color: white;
+}
+
+@media(width < 600px) {
+    .live-support .container {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 36px;
+    }
+
+    .live-support .container .child-1,
+    .live-support .container .child-2 {
+        text-align: center;
+        padding: 16px;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .live-support .container .child-2 {
+        border-radius: 0 0 6px 6px;
+    }
+}

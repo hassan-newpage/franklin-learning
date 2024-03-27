@@ -1,0 +1,134 @@
+.tab-block {
+    background-color: #f5f5f5;
+}
+
+.tab-block .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 2px 40px 2px;
+    height: 40px;
+}
+
+.tab-block .tabs>* {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #e5e5e5;
+    color: #636363;
+    border: 0;
+    padding: 10px 24px;
+    border-top: 6px solid transparent;
+
+
+}
+
+.tab-block .tabs>.active {
+    color: #430098;
+    background-color: #f5f5f5;
+    border-top: 6px solid #430098;
+}
+
+.tab-block .panel {
+    display: none;
+}
+
+.tab-block .panel.active {
+    display: block;
+    padding: 0 32px;
+}
+
+.tab-block .panel-0 .child-1,
+.tab-block .panel-1 .child-1,
+.tab-block .panel-2 .child-1 {
+    color: #7349A8;
+}
+
+.tab-block .panel-0 .child-2,
+.tab-block .panel-1 .child-2,
+.tab-block .panel-2 .child-2 {
+    font-family: "Pfizer Diatype", "Pfizer Diatype-fallback", sans-serif;
+    font-size: 1em;
+}
+
+.tab-block .co-pay {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.tab-block .panel-0 .child-4 {
+    margin-top: 10px;
+    color: #430098;
+}
+
+.tab-block .panel-0 .child-5 {
+    font-family: "Pfizer Diatype", "Pfizer Diatype-fallback", "sans-seri";
+    font-size: 1em;
+}
+
+.tab-block .panel-0 .child-6 a.button:any-link {
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 100%;
+    margin: 0;
+    border: 2px solid #430098;
+    border-radius: 100vw;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #430098;
+    font-family: inherit;
+    font-size: 87.5%;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+    word-spacing: 2px;
+}
+
+.tab-block .panel-0 .child-6 a.button:any-link:hover {
+    color: #fff;
+    background-color: #430098;
+}
+
+.tab-block .panel-0 .child-7 a:any-link {
+    color: rgb(108, 161, 0);
+    text-decoration: underline;
+}
+
+.tab-block .panel-0 .child-7 a:any-link:hover {
+    background-image: linear-gradient(to top, rgb(108, 161, 0), rgb(108, 161, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+    background-origin: padding-box;
+    background-position-x: 0px;
+    background-position-y: 95%;
+    background-repeat: repeat;
+    background-size: 100% 200%;
+    cursor: auto;
+    display: inline;
+    font-family: "Pfizer Diatype", "Pfizer Diatype-fallback", sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    transition: .25s cubic-bezier(.25, .46, .45, .94);
+}
+
+@media (width < 600px) {
+    .tab-block .tabs>* {
+        padding: 10px 10px;
+        font-size: 16px;
+    }
+
+    .tab-block .co-pay {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tab-block .panel-0 .child-6 a.button:any-link {
+        width: 100%;
+    }
+}

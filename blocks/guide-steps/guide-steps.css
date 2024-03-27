@@ -1,0 +1,50 @@
+.guide-steps {
+    display: flex;
+    padding: 65px 0;
+}
+
+.guide-steps>div {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    align-items: center;
+}
+
+.guide-steps>div>div {
+    display: flex;
+    justify-content: center;
+}
+
+.guide-steps>div>div:first-child {
+    padding: 0 20px;
+}
+
+.guide-steps hr {
+    width: 1px;
+    transform: rotate(15deg);
+    border-color: #e8e4dc;
+}
+
+@media (width < 600px) {
+    .guide-steps {
+        flex-direction: column;
+    }
+
+    .guide-steps div {
+        width: 100%;
+        font-weight: 700;
+        font-family: roboto-slab, serif;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.18;
+        letter-spacing: normal;
+        color: #1e1e1e;
+    }
+
+    .guide-steps hr {
+        width: 100%;
+        transform: unset;
+        border-color: #e8e4dc;
+    }
+
+}

@@ -1,0 +1,34 @@
+.custom-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.custom-footer a.button:any-link,
+.custom-footer div {
+    color: #7a3087;
+    font-size: 16px;
+    font-family: neuzeit-grotesk, sans-serif;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    padding: unset;
+    background-color: unset;
+    margin: unset;
+}
+
+.custom-footer a.button:any-link {
+    text-decoration: underline;
+}
+
+@media (width< 600px) {
+    .custom-footer {
+        flex-direction: column;
+    }
+
+    .custom-footer a.button:any-link,
+    .custom-footer div {
+        text-align: center;
+    }
+}

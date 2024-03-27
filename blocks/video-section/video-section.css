@@ -1,0 +1,80 @@
+    .video-section h2 {
+        font-size: 34px;
+        font-weight: bold;
+    }
+
+    .video-section p {
+        font-size: 20px;
+    }
+
+    .video-section .video-div {
+        width: 50%;
+        margin-top: 45px;
+    }
+
+    .video-section video {
+        width: 100%;
+    }
+
+    .video-section .video-text {
+        padding: 70px 50px;
+    }
+
+    .video-section .video-text h2 {
+        color: #783384;
+        font-family: "Lato", sans-serif;
+        font-size: 34px;
+        line-height: normal;
+    }
+
+    .video-section .video-text p {
+        font-family: "Lato", sans-serif;
+        font-size: 20px;
+        max-width: 410px;
+    }
+
+    .video-section .block-container {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    @media screen and (width <=768px) {
+
+        .video-section h2 {
+            font-size: 18.5px;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .video-section p {
+            font-size: 16px;
+        }
+
+        .video-section .image-small-left .video-section img {
+            width: 160px;
+            margin: 0 auto 1rem;
+            display: block;
+        }
+
+        .video-section .block-container {
+            flex-direction: column;
+            padding: 0 16px;
+        }
+
+        .video-section .video-div {
+            width: 100%;
+        }
+
+        .video-section .video-text {
+            padding: 0;
+            margin-top: 16px;
+        }
+
+        .video-section p,
+        .video-section .video-text h2 {
+            font-size: 18.5px !important;
+            margin: 0;
+            max-width: unset !important;
+        }
+    }

@@ -1,3 +1,347 @@
-.parent-container .text-holder h1 {
-    color: red;
+.footer-pfizer-logo {
+    display: flex;
+    margin-top: 32px;
+}
+
+.footer-pfizer-logo p {
+    font-family: neuzeit-grotesk, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: #414141;
+}
+
+.footer-pfizer-logo>div:nth-child(2) {
+    margin-left: 38px;
+}
+
+.footer-pfizer-logo a.button:any-link,
+.footer-pfizer-logo a:any-link {
+    color: #7a3087;
+    font-size: 16px;
+    font-family: neuzeit-grotesk, sans-serif;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    padding: unset;
+    background-color: unset;
+}
+
+.how-it-happens>div:first-child h2 {
+    font-size: 34px;
+    color: #363636;
+    padding: 25px 40px;
+}
+
+.how-it-happens>div:last-child {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.how-it-happens>div:last-child>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 20.5px;
+    line-height: 35px;
+    padding: 75px 28px;
+}
+
+.how-it-happens>div:last-child>div>h2 {
+    background-color: green;
+    padding: 16px 20px;
+    border-radius: 50%;
+    font-size: 25px;
+    line-height: 21px;
+    color: #fff;
+}
+
+.how-it-happens>div:last-child>div>p:first-child img {
+    width: 100%;
+    height: auto;
+}
+
+.how-it-happens>div:last-child>div:nth-child(odd) {
+    /* background-image: url('https://www.knowpneumonia.com/images/arrow1.png'); */
+    background-image: url('https://www.knowpneumonia.com/images/whiteArrow-new.png');
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    margin-bottom: -95px;
+}
+
+.how-it-happens>div:last-child>div:nth-child(even) {
+    background-image: url('https://www.knowpneumonia.com/images/grayArrrow-new.png');
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px 0 0;
+}
+
+.how-it-happens>div:last-child>div:nth-child(1) {
+    z-index: 6;
+}
+
+.how-it-happens>div:last-child>div:nth-child(2) {
+    z-index: 5;
+}
+
+.how-it-happens>div:last-child>div:nth-child(3) {
+    z-index: 4;
+}
+
+.how-it-happens>div:last-child>div:nth-child(4) {
+    z-index: 3;
+    background-color: #e8e4dc;
+    background-image: unset;
+}
+
+.how-it-happens>div:last-child>div>p:nth-child(3) {
+    margin: 0 22px 20px 10px;
+    padding: 0 20px 60px;
+}
+
+.how-it-happens>div:last-child>div:last-child p a:any-link {
+    color: #a038ab;
+    text-decoration: underline;
+}
+
+.game-plan {
+    padding: 16px;
+}
+
+.game-plan>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.game-plan>div>div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.game-plan>div>div:last-child h2 {
+    font-size: 18.5px;
+    line-height: 22px;
+}
+
+.game-plan>div>div:last-child p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.game-plan>div>div:last-child p.button-container a.button:any-link,
+.game-plan>div>div:last-child p.button-container button {
+    border-radius: 0;
+    font-family: var(--body-font-family);
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    border: 0;
+    padding: 0;
+    text-align: unset;
+    font-style: normal;
+    color: var(--background-color);
+    background-color: var(--link-color);
+    margin: 0;
+    white-space: inherit;
+    overflow: unset;
+    text-overflow: unset;
+}
+
+.game-plan>div>div:last-child p.button-container a.button {
+    cursor: pointer !important;
+    height: 40px !important;
+    position: relative !important;
+    background: #783384 !important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: 400 !important;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0 10px !important;
+}
+
+.game-plan>div>div:last-child p.button-container a.button:after {
+    border-left: 8px solid #783384;
+}
+
+.game-plan>div>div:last-child p.button-container a.button:after {
+    content: "";
+    position: absolute;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    height: 0px;
+    width: 0px;
+    margin-right: -8px;
+    right: 0;
+}
+
+.higher-risk.game-risk {
+    width: 100%;
+    margin-top: unset;
+}
+
+.some-symptoms {
+    padding: 0 16px;
+}
+
+.some-symptoms>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.some-symptoms>div>div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.some-symptoms>div>div:first-child h1 {
+    font-size: 20px;
+    line-height: 25px;
+    color: #783384;
+}
+
+.some-symptoms>div>div:first-child p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.some-symptoms>div>div:first-child ul:nth-of-type(1)>li::marker {
+    color: #d12f6d;
+}
+
+.some-symptoms>div>div:first-child ul:nth-of-type(2)>li::marker {
+    color: #288650;
+}
+
+.some-symptoms>div>div:first-child ul:nth-of-type(3)>li::marker {
+    color: #2f97d1;
+}
+
+.some-symptoms>div>div:first-child ul li {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@media (max-width: 767px) {
+    .some-symptoms>div>div:last-child {
+        display: none;
+    }
+}
+
+@media (min-width: 601px) {
+    .game-plan>div>div:last-child p.button-container a.button {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    .game-plan>div>div:last-child p.button-container a.button {
+        font-size: 21px;
+        line-height: 40px;
+    }
+}
+
+@media (min-width: 900px) {
+    .how-it-happens>div:last-child {
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .how-it-happens>div:last-child>div {
+        margin-top: 0;
+        padding: 35px 0px;
+    }
+
+    .how-it-happens>div:last-child>div:nth-child(odd) {
+        background-image: url('https://www.knowpneumonia.com/images/arrow1.png');
+        margin-left: -40px;
+        margin-bottom: unset;
+    }
+
+    .how-it-happens>div:last-child>div:nth-child(even) {
+        background-image: url('https://www.knowpneumonia.com/images/arrow2.png');
+        margin-left: -80px;
+    }
+
+    .how-it-happens>div:last-child>div:nth-child(4) {
+        background-image: unset;
+    }
+
+    .how-it-happens>div:last-child>div:nth-child(even),
+    .how-it-happens>div:last-child>div:nth-child(odd) {
+        padding: 0 40px;
+    }
+
+    .how-it-happens>div:last-child>div>p:first-child {
+        height: 140px;
+        padding: 20px;
+    }
+
+    .how-it-happens>div:last-child>div>p:nth-child(3) {
+        margin: 0 22px 20px 10px;
+        padding: unset;
+    }
+
+    .game-plan>div {
+        flex-direction: row;
+    }
+
+    .game-plan>div>div:first-child {
+        width: 65%;
+    }
+
+    .game-plan>div>div:last-child h2 {
+        font-size: 34px;
+        line-height: 45px;
+        margin-bottom: 0;
+    }
+
+    .game-plan>div>div:last-child p {
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 0;
+    }
+
+    .game-plan>div>div:last-child p.button-container a.button {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .some-symptoms>div {
+        flex-direction: row;
+    }
+
+    .some-symptoms>div>div:first-child h1 {
+        font-size: 40px;
+        line-height: 1.13;
+    }
+
+    .some-symptoms>div>div:first-child p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .some-symptoms>div>div:first-child ul li {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }

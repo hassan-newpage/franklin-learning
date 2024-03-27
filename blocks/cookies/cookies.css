@@ -1,0 +1,183 @@
+.cookies {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cookies .container {
+    padding: 20px;
+    color: #696969;
+    display: block;
+    width: 575px;
+    position: absolute;
+    box-shadow: 0px 2px 10px -3px #999;
+    background-color: #fff;
+    margin: 64px;
+    top: 0;
+}
+
+.cookies .container .child-0 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.cookies .container .child-0 img {
+    width: 100px;
+    height: 40px;
+}
+
+.cookies .container .child-1 {
+    padding: 0 12px;
+}
+
+.cookies .container .child-1 p {
+    font-size: .812em;
+    margin-bottom: 30px;
+}
+
+.cookies .container .child-2,
+.cookies .container .child-3 {
+    border: 1px solid #d8d8d8;
+    padding: 12px 20px;
+}
+
+
+.cookies .container .child-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cookies .container .child-3 {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.cookies .container .child-3>div:nth-child(1) {
+    grid-row: 1;
+}
+
+.cookies .container .child-3>div:nth-child(2) {
+    grid-row: 2;
+    grid-column: 1 / 3;
+}
+
+.cookies .container .child-3>label {
+    grid-row: 1;
+    justify-self: end;
+}
+
+.cookies .container .child-4 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin: 16px 0;
+    font-size: 14px;
+}
+
+.cookies .container .child-4>div {
+    background-color: #3E47E9;
+    border-color: #3E47E9;
+    color: #FFFFFF;
+    border-radius: 3.6667em;
+    padding: 6px 22px;
+    cursor: pointer;
+}
+
+.cookies .container .child-4>div:hover {
+    background-color: #6a71e3;
+}
+
+.cookies .container .close-btn {
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.cookies .cookies-btn {
+    position: fixed;
+    padding: 0px 10px;
+    border: 1px solid rgb(170, 170, 170);
+    cursor: pointer;
+    line-height: 36px;
+    text-decoration: none;
+    background: rgb(255, 255, 255);
+    font-size: 10pt;
+    color: rgb(0, 0, 0);
+    bottom: 0px;
+    right: 0px;
+}
+
+.cookies .container .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.cookies .container .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.cookies .container .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    /* transition: .4s; */
+}
+
+.cookies .container .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    /* transition: .4s; */
+}
+
+.cookies .container input:checked+.slider {
+    background-color: #2196F3;
+}
+
+.cookies .container input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.cookies .container input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.cookies .container .slider.round {
+    border-radius: 34px;
+}
+
+.cookies .container .slider.round:before {
+    border-radius: 50%;
+}
+
+@media (width < 600px) {
+    .cookies .container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cookies .container .child-4 {
+        bottom: 0;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+}

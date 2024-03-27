@@ -1,0 +1,261 @@
+.inlyta-home {
+    margin: 35px;
+}
+
+.inlyta-home>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.inlyta-home .left-nav {
+    min-width: 228px;
+    height: max-content;
+    overflow-y: auto;
+    top: 0px;
+    position: relative;
+}
+
+.inlyta-home .left-nav ul {
+    padding: unset;
+    margin: unset;
+    background-color: #f6f6f4;
+    margin: 5px 0;
+    text-align: center;
+
+}
+
+.inlyta-home .left-nav ul a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    padding: 12px 15px 12px 25px;
+}
+
+.inlyta-home .left-nav ul a:hover {
+    color: #e54197;
+}
+
+.inlyta-home .right-nav {
+    margin: 0 16px;
+}
+
+.inlyta-home .right-nav h2 {
+    margin: unset;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: .14px;
+    margin: 0 0 10px 0;
+    color: #e54197;
+}
+
+#the-following-side-effects-were-the-most-common-among-patients-in-the-clinical-trial {
+    font-family: "PfizerTomorrow-Regular", arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #1b1b1b;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.inlyta-home .data-table {
+    width: 100%;
+}
+
+.inlyta-home .right-nav ul li {
+    list-style: none;
+}
+
+.inlyta-home .right-nav ul li::before {
+    content: "•";
+    color: #c9c82c;
+    font-weight: 700;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1.19em;
+    position: absolute;
+}
+
+.inlyta-home .right-nav ul li:nth-child(odd)::before {
+    content: "○";
+    color: #c9c82c;
+    font-weight: 700;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1.3em;
+    position: absolute;
+}
+
+@media (width >=600px) {
+
+    .inlyta-home>div {
+        flex-direction: row;
+    }
+
+    .inlyta-home .left-nav {
+        position: sticky;
+        top: 60px;
+    }
+
+    .inlyta-home .left-nav ul {
+        margin: 0;
+    }
+
+    .data-table tbody tr:first-child td,
+    .data-table tbody tr:first-child td h1 {
+        margin: 0;
+        padding: 9px 16px;
+        position: relative;
+        color: #fff;
+        font-size: 16px;
+        line-height: normal;
+        letter-spacing: normal;
+        font-weight: 400;
+        font-family: "PfizerTomorrow-Bold", arial, sans-serif;
+        background-color: #e54197;
+        text-align: center;
+    }
+
+    .data-table tbody tr:not(:first-child) td {
+        padding: 12px;
+        position: relative;
+        color: #1b1b1b;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: .5px;
+        font-weight: 400;
+        font-family: "PfizerTomorrow-Regular", arial, sans-serif;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+
+    .data-table tbody tr:nth-child(odd) {
+        background-color: #f6f6f6;
+    }
+
+    .inlyta-home .child-5,
+    .inlyta-home .child-7 {
+        line-height: normal;
+        font-weight: 400;
+        font-family: "PfizerTomorrow-Bold";
+        color: #fff;
+        letter-spacing: -.61px;
+        font-size: 56px;
+        background-color: #a9ae04;
+        display: inline;
+    }
+}
+
+@media (width < 600px) {
+
+
+    .inlyta-home .accordion .panel {
+        margin: 20px 0 0 0;
+        padding: 16px 45px 16px 15px;
+        cursor: pointer;
+        position: relative;
+        border: 0;
+        color: #1b1b1b;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: .13px;
+        font-weight: 400;
+        font-family: "PfizerTomorrow-Bold", arial, sans-serif;
+        box-shadow: none;
+        background-color: #f6f6f4;
+        border-bottom: solid 1px #c9c82c;
+    }
+
+    .inlyta-home .accordion .panel:last-child {
+        border-bottom: none;
+    }
+
+    .inlyta-home .accordion .panel-content {
+        display: none;
+        padding: 10px;
+        position: relative;
+        border: 0;
+        color: #333;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: .11px;
+        font-weight: 400;
+        font-family: "PfizerTomorrow-Regular", arial, sans-serif;
+        padding: 24px 15px;
+        background-color: #fbfdff;
+        box-shadow: 0 0 10px 0 rgba(204, 204, 204, .65);
+    }
+
+    .inlyta-home .accordion .panel-content div,
+    .inlyta-home .accordion .panel-content td,
+    .inlyta-home .accordion .panel-content h1 {
+        margin: 0;
+        padding: 5px 0;
+        position: relative;
+        color: #333;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: .1px;
+        font-weight: 400;
+        font-family: "PfizerTomorrow-Regular", arial, sans-serif;
+        text-align: center;
+    }
+
+    .inlyta-home .accordion .panel-content h1,
+    .inlyta-home .accordion .panel-content td {
+        column-gap: 1px;
+        display: flex;
+        background-color: #f6f6f6;
+        justify-content: center;
+    }
+
+    .inlyta-home .data-table tbody tr:first-child {
+        display: none;
+    }
+
+    .inlyta-home .panel.active {
+        color: #fff;
+        padding-left: 15px;
+        box-shadow: 0 0 10px 0 rgba(204, 204, 204, .65);
+        background-color: #b7006e;
+        border-bottom: solid 1px #b7006e;
+    }
+
+    .inlyta-home .panel span:nth-child(2) {
+        display: none;
+    }
+
+    .inlyta-home .panel.active span:first-child {
+        display: none;
+
+    }
+
+    .inlyta-home .panel.active span:nth-child(2) {
+        display: block;
+    }
+
+    .inlyta-home .panel {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .inlyta-home .panel-content.active {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns */
+        grid-template-rows: repeat(2, auto);
+        /* Two rows */
+        grid-gap: 10px;
+        /* Adjust as needed */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Two columns */
+        grid-gap: 10px;
+        /* Adjust as needed */
+    }
+
+}
