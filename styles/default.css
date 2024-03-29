@@ -149,16 +149,15 @@
 .game-plan>div>div:last-child p.button-container a.button:any-link,
 .game-plan>div>div:last-child p.button-container button {
     border-radius: 0;
-    font-family: var(--body-font-family);
     display: inline-flex;
     align-items: center;
     text-decoration: none;
     border: 0;
-    padding: 0;
+    padding: 0 10px;
     text-align: unset;
     font-style: normal;
-    color: var(--background-color);
-    background-color: var(--link-color);
+    color: rgb(255, 255, 255);
+    background-color: #783384;
     margin: 0;
     white-space: inherit;
     overflow: unset;
@@ -169,12 +168,9 @@
     cursor: pointer !important;
     height: 40px !important;
     position: relative !important;
-    background: #783384 !important;
-    color: rgb(255, 255, 255) !important;
     font-weight: 400 !important;
     font-size: 12px;
     line-height: 15px;
-    padding: 0 10px !important;
 }
 
 .game-plan>div>div:last-child p.button-container a.button:after {
@@ -240,24 +236,297 @@
     line-height: 20px;
 }
 
-@media (max-width: 767px) {
-    .some-symptoms>div>div:last-child {
-        display: none;
-    }
+.some-symptoms>div>div:last-child {
+    display: none;
 }
 
-@media (min-width: 601px) {
-    .game-plan>div>div:last-child p.button-container a.button {
-        font-size: 16px;
-        line-height: 18px;
-    }
+.take-action-hero>div:first-child {
+    position: relative;
 }
 
-@media (min-width: 992px) {
-    .game-plan>div>div:last-child p.button-container a.button {
-        font-size: 21px;
-        line-height: 40px;
-    }
+.take-action-hero>div>div:first-child {
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    width: 70%;
+}
+
+.take-action-hero>div>div:nth-child(3) img {
+    width: 100%;
+}
+
+.take-action-hero>div>div:nth-child(2) {
+    display: none;
+}
+
+.take-action-hero h1 {
+    width: 70%;
+    font-size: 19.5px;
+    margin-bottom: 20px;
+    font-family: Lato;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: left;
+    color: #288650;
+    margin-right: 26px;
+}
+
+.take-action-hero p {
+
+    width: 70%;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #363636;
+}
+
+.talk-about {
+    padding: 0 32px 32px;
+}
+
+.talk-about>div:first-child>div {
+    font-stretch: normal;
+    font-style: normal;
+    line-height: .8;
+    letter-spacing: normal;
+    text-align: left;
+    color: #363636;
+    margin-top: 16px;
+    margin-bottom: 28px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.talk-about>div:nth-child(2) {
+    background-color: #f3f1ed;
+}
+
+.talk-about>div:nth-child(2)>div:first-child {
+    background-color: #fff;
+}
+
+.talk-about>div:nth-child(2) h2 {
+    font-family: roboto-slab, serif;
+    font-size: 21px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #783384;
+    margin-top: 28px;
+    margin-bottom: 0;
+}
+
+.talk-about>div:nth-child(2) p,
+.talk-about>div:nth-child(2) li {
+    font-size: 15px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: left;
+    color: #363636;
+    margin: 0;
+}
+
+.talk-about>div:nth-child(2) li::marker {
+    content: "\2022";
+    color: #783384;
+    font-weight: 700;
+}
+
+
+.talk-about>div:nth-child(2) h3 {
+    font-size: 18px;
+    width: 200px;
+    color: #1e1e1e;
+    font-weight: 700;
+}
+
+.talk-about>div:nth-child(2) a.button:any-link {
+    font-size: 20px;
+    font-weight: 600;
+    color: #783384;
+    background: none;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+}
+
+.understand-hero {
+    position: relative;
+}
+
+.understand-hero>div:first-child {
+    position: absolute;
+    top: 5.27%;
+    left: 6%;
+    right: 0;
+    width: 57%;
+
+}
+
+.understand-hero>div:first-child h1 {
+    color: #363636;
+    text-transform: uppercase;
+    font-family: lato, sans-serif;
+    font-size: 18px;
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+.understand-hero>div:nth-child(2)>div img {
+    width: 100%;
+}
+
+.understand-hero>div:nth-child(2)>div:first-child {
+    display: none;
+}
+
+.understand-hero>div:nth-child(3),
+.understand-hero>div:nth-child(3)>div {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.understand-hero>div:nth-child(3)>div:nth-child(2) {
+    text-align: center;
+    background-color: #d6d2ca;
+    border-radius: 50%;
+    font-size: 16.5px;
+    font-family: roboto-slab, serif;
+    font-weight: 700;
+    width: 45px;
+    letter-spacing: 0;
+    margin: 32px 0;
+    line-height: 18.5px;
+}
+
+.understand-hero>div p {
+    color: #000;
+    font-size: 18px;
+    font-family: Lato;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+.understand-hero>div a.button:any-link {
+    font-family: roboto-slab, serif;
+    font-size: 18px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 23px;
+    letter-spacing: normal;
+    color: #783284;
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+    background: none;
+    margin: 0;
+}
+
+.risk-hospitalization {
+    padding: 18px;
+}
+
+.risk-hospitalization h2 {
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: left;
+    color: #363636;
+    font-size: 22px;
+    letter-spacing: -0.19px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.risk-hospitalization p {
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 25.5px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: #363636;
+}
+
+.risk-hospitalization>div:first-child>div:first-child>p:nth-child(3) {
+    display: flex;
+    gap: 26px;
+}
+
+.risk-chart {
+    margin: 0 16px;
+}
+
+.risk-chart h2 {
+    font-size: 22px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 22px;
+    letter-spacing: -0.86px;
+    text-align: left;
+    color: #363636;
+    margin-bottom: 16px;
+}
+
+.risk-chart>div:nth-child(2) {
+    background-color: #f3f1ed;
+}
+
+.risk-chart .button-container {
+    position: relative;
+    height: 78px;
+}
+
+.risk-chart a.button:any-link {
+    border-radius: 0;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    border: 0;
+    padding: 0 10px;
+    text-align: unset;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    background-color: #783384;
+    margin: 0;
+    white-space: inherit;
+    overflow: unset;
+    text-overflow: unset;
+    cursor: pointer;
+    height: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 16px;
+    position: absolute;
+}
+
+.risk-chart a.button:after {
+    content: "";
+    position: absolute;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    height: 0px;
+    width: 0px;
+    margin-right: -8px;
+    right: 0;
+    border-left: 8px solid #783384;
 }
 
 @media (min-width: 900px) {
@@ -322,8 +591,8 @@
     }
 
     .game-plan>div>div:last-child p.button-container a.button {
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 21px;
+        line-height: 40px;
     }
 
     .some-symptoms>div {
@@ -343,5 +612,72 @@
     .some-symptoms>div>div:first-child ul li {
         font-size: 20px;
         line-height: 30px;
+    }
+
+    .take-action-hero>div>div:first-child {
+        top: 48px;
+        left: 61px;
+        width: 50%;
+    }
+
+    .take-action-hero>div>div:nth-child(3) {
+        display: none;
+    }
+
+    .take-action-hero>div>div:nth-child(2) {
+        display: block;
+    }
+
+    .take-action-hero h1 {
+        width: 90%;
+        font-size: 28px;
+
+    }
+
+    .take-action-hero p {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .talk-about>div:first-child>div {
+        font-size: 34.5px;
+        font-weight: 500;
+    }
+
+    .talk-about>div:nth-child(2)>div:first-child {
+        width: 65%;
+    }
+
+    .talk-about>div:nth-child(2)>div:nth-child(2) {
+        width: 35%;
+    }
+
+    .talk-about>div:nth-child(2) h2 {
+        font-size: 28px;
+    }
+
+    .talk-about>div:nth-child(2) p,
+    .talk-about>div:nth-child(2) li {
+        font-size: 20px;
+    }
+
+    .talk-about>div:nth-child(2) {
+        display: flex;
+        gap: 50px;
+        padding-right: 32px;
+    }
+
+    .talk-about>div:nth-child(2) h3 {
+        font-size: 21px;
+        width: 258px;
+        margin-bottom: 0;
+    }
+
+    .understand-hero>div:nth-child(2)>div:first-child {
+        display: block;
+    }
+
+    .understand-hero>div:nth-child(2)>div:nth-child(2) {
+        display: none;
     }
 }
