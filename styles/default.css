@@ -673,6 +673,16 @@
         margin-bottom: 0;
     }
 
+    .understand-hero>div:nth-child(3) {
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .understand-hero>div p,
+    .understand-hero>div a.button:any-link {
+        font-size: 24px;
+    }
+
     .understand-hero>div:nth-child(2)>div:first-child {
         display: block;
     }
