@@ -329,12 +329,16 @@ header nav .nav-sections ul>li>ul {
 }
 
 /* tools */
+header {
+  height: 150px;
+}
+
 header nav .nav-tools {
   grid-area: tools;
 }
 
 .header-bar {
-  display: none;
+  display: flex;
   align-items: center;
   gap: 10px;
   margin: 20px 0 10px;
@@ -375,6 +379,10 @@ header nav .nav-tools {
 }
 
 @media (width < 900px) {
+  header {
+    height: unset;
+  }
+
   .header-bar {
     flex-flow: column;
     justify-content: flex-start;

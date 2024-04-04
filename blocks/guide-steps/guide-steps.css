@@ -25,6 +25,10 @@
     border-color: #e8e4dc;
 }
 
+.help-guide>hr:nth-child(4) {
+    display: none;
+}
+
 @media (width < 600px) {
     .guide-steps {
         flex-direction: column;

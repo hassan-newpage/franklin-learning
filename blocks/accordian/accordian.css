@@ -3,6 +3,10 @@
     margin: 32px auto;
 }
 
+.accordian>div {
+    margin: 16px 0;
+}
+
 .accordian>div>:not(div:first-child) {
     display: none;
 }
@@ -17,7 +21,7 @@
     align-items: center;
     background-color: #fff;
     cursor: pointer;
-    padding: 0 7px;
+    padding: 7px 7px 7px 14px;
     transition: 0.4s;
     font-weight: 700;
     border: solid 2px #d3d2d2;
@@ -28,20 +32,55 @@
     color: #783384;
 }
 
+
+.accordian>div>div:first-child:hover {
+    border: solid 2px #d3d2d2;
+    box-shadow: 5px;
+    box-shadow: 0 0 10px #d3d2d2;
+    outline: 0 auto #d3d2d2;
+}
+
 .accordian>div>div:first-child>p {
     margin: 0;
 }
 
+.accordian>div>div:nth-child(2) {
+    text-align: left;
+    font-weight: 700;
+    padding-top: 20px;
+    color: #212529;
+    padding: 18px;
+}
+
+.accordian>div.active>div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: flex-end;
+    padding: 0 18px;
+}
+
+.accordian>div.active>div:nth-child(4)>picture {
+    display: flex;
+    justify-content: center;
+    padding: 34px 0 12px;
+}
+
 .accordian>div>div:first-child>p:nth-child(2) {
-    margin: 0 0 0 26px;
+    margin-left: 26px;
     padding: 12px 18px 12px 33px;
     border: solid 2px #f3f1ed;
     background-color: #f3f1ed;
     width: 100%;
 }
 
+.accordian>div.active>div:first-child>p:nth-child(2) {
+    color: #fff;
+    background-color: #783384;
+}
+
 .accordian>div>div:first-child>p:nth-child(2)::after {
-    font-weight: 400;
+    /* font-weight: 400;
     margin-left: 5px;
     margin-top: 3px;
     float: right;
@@ -51,9 +90,50 @@
     width: 24px;
     height: 25px;
     content: "";
-    background: url('https://www.knowpneumonia.com/images/understand/open-accordion.png') no-repeat;
+    background: url('https://www.knowpneumonia.com/images/understand/open-accordion.png') no-repeat; */
+    float: right;
+    width: 24px;
+    height: 25px;
+    margin-top: 5px;
+    color: #783384;
+    content: " \002B";
 }
 
 .accordian>div.active>div:first-child>p:nth-child(2)::after {
-    background: url('https://www.knowpneumonia.com/images/understand/close-accordion.png') no-repeat;
+    /* background: url('https://www.knowpneumonia.com/images/understand/close-accordion.png') no-repeat; */
+    content: " \2715";
+    font-size: 20px;
+    color: #fff;
+}
+
+@media (width < 600px) {
+
+    .accordian {
+        width: 95%;
+    }
+
+    .accordian>div>div:first-child>p:nth-child(2) {
+        padding: 12px;
+        margin-left: 14px;
+        font-size: 18px;
+        align-items: center;
+        display: flex;
+    }
+
+    .accordian>div>div:nth-child(2) {
+        font-size: 16px;
+    }
+
+    .accordian>div.active>div:nth-child(3) {
+        gap: 12px
+    }
+
+    .accordian>div.active>div:nth-child(4) {
+        display: flex;
+        justify-content: center;
+    }
+
+    .accordian>div.active>div:nth-child(4)>picture {
+        width: 75%;
+    }
 }
